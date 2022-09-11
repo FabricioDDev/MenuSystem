@@ -3,12 +3,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         
-     <div class="row">               
+     <div class="row" style="background:#606c38; color:white; height:100vh;">               
         <div class="col">
-            <h1 class="text text-xl-center">¡¡Nuestros Destacados!!</h1>
+            <h1 class="h1 p-4">¡¡Nuestros Destacados!!</h1>
             <asp:Repeater ID="rtrCard" runat="server">
                 <ItemTemplate>
-                    <div class="card h-10">
+                    <div class="card h-10" style="background:#606c38;">
                       <div class="card-body">
                            <h5 class="card-title"><%#Eval("Name") %></h5>
                            <p class="card-text"><%#Eval("Description") %></p>
@@ -33,7 +33,7 @@
                             justify-content:center; 
                             align-items:center; 
                             color:white;   
-                            background-color:black; 
+                            background-color:#198754; 
                             width:20vh; 
                             height:5vh; 
                             border-radius:20px;

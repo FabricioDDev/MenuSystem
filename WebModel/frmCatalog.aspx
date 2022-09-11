@@ -2,12 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <div class="row">    
+      <div class="row" style="background:#606c38; color:white; height:100vh;">    
         <div class="col">
-            <asp:Label ID="LblCategory" runat="server" Text="Label"></asp:Label>
+            <div class="p-4">
+                <asp:Label ID="LblCategory" CssClass="h1" runat="server" Text="Label"></asp:Label>
+            </div>
             <asp:Repeater ID="rtrCard" runat="server">
                 <ItemTemplate>
-                    <div class="card h-10">
+                    <div class="card h-10" style="background:#606c38;">
                       <div class="card-body">
                            <h5 class="card-title"><%#Eval("Name") %></h5>
                            <p class="card-text"><%#Eval("Description") %></p>
@@ -15,7 +17,7 @@
                               <label>Precio: $</label>
                                <asp:Label ID="LblPrice" runat="server" Text='<%#Eval("Price")%>'></asp:Label>
                            </div>
-                           <asp:Button ID="BtnAdd" CssClass="btn btn-success" OnClick="BtnAdd_Click" CommandArgument='<%#Eval("Id")%>' runat="server" Text="Button" />
+                           <asp:Button ID="BtnAdd" CssClass="btn btn-success" OnClick="BtnAdd_Click" CommandArgument='<%#Eval("Id")%>' runat="server" Text="+" />
                       </div>
                     </div>
                 </ItemTemplate>
@@ -32,7 +34,7 @@
                             justify-content:center;
                             align-items:center;
                             color:white;
-                            background-color:black;
+                            background-color:#198754;
                             width:20vh;
                             height:5vh;
                             border-radius:20px;

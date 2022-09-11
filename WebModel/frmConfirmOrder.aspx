@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
-        <div class="col">
+    <div class="row justify-content-center" style="background:#606c38;  color:white;  height:100vh;">
+        <div class="col-auto p-5">
             <h1>¡¡Ya casi Terminas!!</h1>
             <label class="form-label">Ingresa el Nro de Mesa:</label>
             <asp:TextBox
@@ -14,8 +14,8 @@
                 max="20"
                 step="1"
                 runat ="server"
-            ></asp:TextBox>
-            <asp:Button ID="BtnConfirm" CssClass="btn btn-success" runat="server" OnClick="BtnConfirm_Click" Text="Confirmar" />
+            ForeColor="Black"></asp:TextBox>
+            <asp:Button ID="BtnConfirm" CssClass="btn btn-success btn-sm" runat="server" OnClick="BtnConfirm_Click" Text="Confirmar" />
         </div>
     </div>
 </asp:Content>

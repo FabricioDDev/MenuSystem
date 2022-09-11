@@ -2,11 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
+    <div class="row" style="background:#606c38;  color:white;  height:100vh;">
         <div class="col">
-            <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="p-5 mb-4 rounded-3" style="background:#606c38;">
               <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">¿Como realizar tu order?</h1>
+                <h1 class="display-5 fw-bold">¿Como realizar tu orden?</h1>
                    <ul>
                     <li>1-Selecciona una categoria en la barra de navegacion.</li>
                     <li>2-Con el boton "+" podras agregar platos a tu pedido.</li>

@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
-        <div class="col align-items-center justify-content-center">
+    <div class="row justify-content-center" style="background:#606c38;  color:white;  height:100vh;">
+        <div class="col col-auto p-5">
             <h1 class="text-center">Tu Pedido</h1>
             <asp:Label ID="LblClean" runat="server" Text=""></asp:Label>
             <asp:GridView 
