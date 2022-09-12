@@ -8,12 +8,9 @@ namespace DomainModel
 {
     public class Order
     {
-        public Order()
-        {
-            FoodList = new List<Food>();
-        }
         public int Table { get; set; }
         public decimal TotalPay { get; set; }
-        public List<Food> FoodList { get; set; }
+        public string FoodList { get; set; }
+        public bool active { get; set; }
     }
 }

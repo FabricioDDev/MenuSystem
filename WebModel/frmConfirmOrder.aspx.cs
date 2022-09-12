@@ -14,6 +14,17 @@ namespace WebModel
         {
             
         }
+        private string ConvertList()
+        {
+            List<Food> List = new List<Food>();
+            List = (List<Food>)Session["Order"];
+            string aux = null;
+            foreach (var item in List)
+            {
+                    aux += item.Name + "|| ";
+            }
+            return aux;
+        }
 
         protected void BtnConfirm_Click(object sender, EventArgs e)
         {
@@ -21,7 +32,8 @@ namespace WebModel
             Order newOrder = new Order();
             newOrder.Table = int.Parse(TxtTable.Text);
             newOrder.TotalPay = decimal.Parse(Session["Total"].ToString()) ;
-            newOrder.FoodList = (List<Food>)Session["Order"];
+            newOrder.FoodList = ConvertList();
+            newOrder.active = true;
 
             if (Session["OrderList"] == null)
             {

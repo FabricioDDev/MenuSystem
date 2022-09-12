@@ -70,9 +70,11 @@
     <Content Include="ErrorPage.html" />
     <Content Include="frmCart.aspx" />
     <Content Include="frmCatalog.aspx" />
+    <Content Include="frmConfig.aspx" />
     <Content Include="frmConfirmOrder.aspx" />
     <Content Include="frmFinish.aspx" />
     <Content Include="frmInformation.aspx" />
+    <Content Include="frmOrdersAdm.aspx" />
     <Content Include="Global.asax" />
     <Content Include="MasterStyle.css" />
     <Content Include="frmTop.aspx" />
@@ -92,6 +94,13 @@
     </Compile>
     <Compile Include="frmCatalog.aspx.designer.cs">
       <DependentUpon>frmCatalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfig.aspx.cs">
+      <DependentUpon>frmConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmConfig.aspx.designer.cs">
+      <DependentUpon>frmConfig.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmConfirmOrder.aspx.cs">
       <DependentUpon>frmConfirmOrder.aspx</DependentUpon>
@@ -113,6 +122,13 @@
     </Compile>
     <Compile Include="frmInformation.aspx.designer.cs">
       <DependentUpon>frmInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdersAdm.aspx.cs">
+      <DependentUpon>frmOrdersAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmOrdersAdm.aspx.designer.cs">
+      <DependentUpon>frmOrdersAdm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
